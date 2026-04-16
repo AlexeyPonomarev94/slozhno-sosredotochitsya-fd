@@ -4,8 +4,11 @@
 */
 
 :root {
-  --bg-color-darkTheme: #000028; 
-  --bg-image-darkTheme: url(../images/cover-image-dark.png);
-  --bg-image-lightTheme: url(../images/cover-image-light.png);
-  --font-main: 'IBM Plex mono', sans-serif;
+  --bg-image: url(../images/cover-image.png);
+  --main-font: 'IBM Plex mono', monospace;
+  --accent-color: #FF0070;
+  --bg-color: #000028;
+  --title-color: #DB00FF;
+  --text-color: #F1B2CE;
 }
+

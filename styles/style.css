@@ -1,12 +1,122 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
+.decorated-zone {
+  position: relative;
+}
+
+.decorated-zone::after {
+  position: absolute;
+  content: "";
+  top: 10px;
+  right: 10px;
+  width: 25px;
+  height: 25px;
+  border-top: 1px solid var(--accent-color);
+  border-right: 1px solid var(--accent-color);
+}
+
+.decorated-zone::before {
+  position: absolute;
+  content: "";
+  bottom: 10px;
+  left: 10px;
+  width: 25px;
+  height: 25px;
+  border-bottom: 1px solid var(--accent-color);
+  border-left: 1px solid var(--accent-color);
+}
+
+.title-decor {
+  line-height: 23.4px;
+  font-weight: 800;
+  color: var(--bg-color);
+  background-color: var(--accent-color);
+}
+
+.accent-title-decor {
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  line-height: 82.5%;
+  color: var(--title-color);
+  text-shadow: 4px 4px 0 var(--accent-color);
+}
 
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
-  background-color: var(--bg-color-darkTheme);
-  background-image: var(--bg-image-darkTheme);
+  font-family: var(--main-font);
+  font-size: 18px;
+  background-color: var(--bg-color);
+  background-image: var(--bg-image);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  font-family: var(--font-main);
+}
+
+.header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  min-block-size: 100vh;
+  min-height: 668px;
+  padding: 10px;
+}
+
+.header__recording {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 10px;
+  right: 10px;
+  line-height: 25px;
+  color: var(--accent-color);
+}
+
+.header__recording::after {
+  content: "";
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  margin-left: 10px;
+  margin-right: 9px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  box-shadow: 0 0 4px 2px var(--accent-color);
+}
+
+.header__theme-menu {
+  grid-column: 3 / -1;
+  justify-self: end;
+  align-self: center;
+  padding: 55px 0;
+}
+
+.header__title {
+  grid-column: 1 / -1;
+  align-self: end;
+}
+
+.header__description {
+  grid-column: 1 / -1;
+  align-self: center;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.header__theme-menu-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 13px;
+  line-height: 18px;
+  text-transform: lowercase;
+  background-color: transparent;
+  border: none;
+  color: var(--accent-color);
+}
+
+.header__description {
+  margin: 55px 0;
 }
