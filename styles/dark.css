@@ -9,6 +9,15 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
-  --bg-color: #000028; 
+  --bg-color: #000028;
+  --text-color: #F1B2CE;
+  --accent-color: #FF0070;
+  --title-color: #DB00FF;
+  --subtitle-color: #000028;
+  --card-background: transparent;
+  --button-background: transparent;
+  --button-text-color: #ff0070;
+  --button-hover-color: rgb(255, 0, 112, 0.4);
+  --decor-color: #ff0070;
   --bg-image: url(../images/cover-image-dark.png);
 }

@@ -4,11 +4,16 @@
 */
 
 :root {
-  --bg-image: url(../images/cover-image.png);
-  --main-font: 'IBM Plex mono', monospace;
-  --accent-color: #FF0070;
   --bg-color: #000028;
-  --title-color: #DB00FF;
   --text-color: #F1B2CE;
+  --accent-color: #FF0070;
+  --title-color: #DB00FF;
+  --subtitle-color: #000028;
+  --card-background: transparent;
+  --button-background: transparent;
+  --button-text-color: #ff0070;
+  --button-hover-color: rgb(255, 0, 112, 0.4);
+  --decor-color: #ff0070;
+  --main-font: 'IBM Plex mono', 'Arial', monospace;
 }
 
