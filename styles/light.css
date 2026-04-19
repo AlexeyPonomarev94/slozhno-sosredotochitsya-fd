@@ -6,8 +6,8 @@
   --subtitle-color: #000028;
   --card-background: transparent;
   --button-background: transparent;
-  --button-text-color: #ff0070;
-  --button-hover-color: rgb(255, 0, 112, 0.4);
+  --button-text-color: #353430;
+  --button-hover-color: rgb(3, 52, 48, 0.4);
   --decor-color: #FF8DCB;
   --bg-image: url(../images/cover-image-light.png);
 }
@@ -21,9 +21,9 @@
   --subtitle-color: #000028;
   --card-background: transparent;
   --button-background: transparent;
-  --button-text-color: #ff0070;
-  --button-hover-color: rgb(255, 0, 112, 0.4);
+  --button-text-color: #353430;
+  --button-hover-color: rgb(3, 52, 48, 0.4);
   --decor-color: #FF8DCB;
   --bg-image: url(../images/cover-image-light.png);
   }
-} 
+}

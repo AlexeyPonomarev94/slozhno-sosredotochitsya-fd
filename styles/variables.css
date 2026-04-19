@@ -15,5 +15,6 @@
   --button-hover-color: rgb(255, 0, 112, 0.4);
   --decor-color: #ff0070;
   --main-font: 'IBM Plex mono', 'Arial', monospace;
+  --bg-image: url(../images/cover-image-dark.png);
 }
 
