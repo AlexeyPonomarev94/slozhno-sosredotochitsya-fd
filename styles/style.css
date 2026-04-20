@@ -13,7 +13,7 @@
 
 /* --- LAYOUT --- */
 
-.page {
+.page__layout {
   display: grid;
   gap: 40px;
 }
@@ -357,12 +357,9 @@
     gap: 20px;
   }
 
-  .content__gallery-list {
-    overflow: hidden;
-  }
-
   .content__gallery-list-item img {
     height: 100%;
+    overflow: hidden;
   }
 
   .content__gallery-list-item:nth-child(1) {
