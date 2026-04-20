@@ -12,7 +12,7 @@
   --bg-image: url(../images/cover-image-dark.png);
 }
 
-:root.theme-dark .header__rec{
+:root.theme-dark .header__rec {
   display: flex;
 }
 
