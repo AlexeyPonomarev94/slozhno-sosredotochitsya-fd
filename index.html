@@ -1,20 +1,20 @@
 <!doctype html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="color-scheme" content="dark light" />
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="color-scheme" content="dark light"/>
     <title>Сложно сосредоточиться</title>
-    <link rel="stylesheet" href="./fonts/fonts.css" />
-    <link rel="stylesheet" href="./styles/globals.css" />
-    <link rel="stylesheet" href="./styles/variables.css" />
-    <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" href="./styles/dark.css" />
-    <link rel="stylesheet" href="./styles/light.css" />
-    <link rel="icon" href="./images/favicon.ico" sizes="any" />
-    <link rel="icon" href="./images/favicon.svg" type="images/svg+xml" />
-    <link rel="apple-touch-icon" href="./images/mobile-icon.png" />
+    <link rel="stylesheet" href="./fonts/fonts.css"/>
+    <link rel="stylesheet" href="./styles/globals.css"/>
+    <link rel="stylesheet" href="./styles/variables.css"/>
+    <link rel="stylesheet" href="./styles/style.css"/>
+    <link rel="stylesheet" href="./styles/dark.css"/>
+    <link rel="stylesheet" href="./styles/light.css"/>
+    <link rel="icon" href="./images/favicon.ico" sizes="any"/>
+    <link rel="icon" href="./images/favicon.svg" type="images/svg+xml"/>
+    <link rel="apple-touch-icon" href="./images/mobile-icon.png"/>
     <script src="./scripts/script.js"></script>
   </head>
   <body class="page">
@@ -55,7 +55,6 @@
           Или почему нам так сложно сконцентрироваться, особенно когда очень
           надо
         </p>
-        <p></p>
       </div>
     </header>
     <main class="content">
@@ -222,44 +221,64 @@
           <h3 class="content__card-title">А можно в картинках?</h3>
           <ul class="content__gallery-list">
             <li class="content__gallery-list-item">
-              <img
-                src="./images/sunset.png"
-                loading="lazy"
-                class="sunset"
-                alt="Горы с заходящим солнцем"
-              />
+              <picture>
+                <source srcset="./images/sunset.avif" type="image/avif" />
+                <source srcset="./images/sunset.webp" type="image/webp" />
+                <img
+                  src="./images/sunset.png"
+                  loading="lazy"
+                  class="sunset"
+                  alt="Горы с заходящим солнцем"
+                />
+              </picture>
             </li>
             <li class="content__gallery-list-item">
-              <img
-                src="./images/ice-cream.png"
-                loading="lazy"
-                class="ice-cream"
-                alt="Желтая тарелка с фруктами и кремом"
-              />
+              <picture>
+                <source srcset="./images/ice-cream.avif" type="image/avif" />
+                <source srcset="./images/ice-cream.webp" type="image/webp" />
+                <img
+                  src="./images/ice-cream.png"
+                  loading="lazy"
+                  class="ice-cream"
+                  alt="Желтая тарелка с фруктами и кремом"
+                />
+              </picture>
             </li>
             <li class="content__gallery-list-item">
-              <img
-                src="./images/tape.png"
-                class="tape"
-                loading="lazy"
-                alt="Касета от магнитофона"
-              />
+              <picture>
+                <source srcset="./images/tape.avif" type="image/avif" />
+                <source srcset="./images/tape.webp" type="image/webp" />
+                <img
+                  src="./images/tape.png"
+                  class="tape"
+                  loading="lazy"
+                  alt="Касета от магнитофона"
+                />
+              </picture>
             </li>
             <li class="content__gallery-list-item">
-              <img
-                src="./images/books.png"
-                class="books"
-                loading="lazy"
-                alt="Стопка книг"
-              />
+              <picture>
+                <source srcset="./images/books.avif" type="image/avif" />
+                <source srcset="./images/books.webp" type="image/webp" />
+                <img
+                  src="./images/books.png"
+                  class="books"
+                  loading="lazy"
+                  alt="Стопка книг"
+                />
+              </picture>
             </li>
             <li class="content__gallery-list-item">
-              <img
-                src="./images/street.png"
-                class="street"
-                loading="lazy"
-                alt="Дома вдоль улицы"
-              />
+              <picture>
+                <source srcset="./images/street.avif" type="image/avif" />
+                <source srcset="./images/street.webp" type="image/webp" />
+                <img
+                  src="./images/street.png"
+                  class="street"
+                  loading="lazy"
+                  alt="Дома вдоль улицы"
+                />
+              </picture>
             </li>
           </ul>
         </article>
