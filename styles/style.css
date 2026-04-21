@@ -23,9 +23,9 @@
   grid-template-rows: 1fr min-content 1fr;
   justify-items: end;
   align-items: center;
+  height: 100vh;
   min-height: 668px;
   padding: 10px;
-  min-block-size: 100vh;
 }
 
 .header__theme-menu {
@@ -57,11 +57,6 @@
   gap: 20px;
 }
 
-.content__wrapper-text {
-  display: grid;
-  gap: 10px;
-}
-
 .content__card {
   display: grid;
   gap: 10px;
@@ -82,6 +77,10 @@
   gap: 20px;
 }
 
+.content__card-list-item .content__card-title {
+  margin-bottom: 10px;
+}
+
 .content__gallery-list {
   display: grid;
   grid-template-columns: 1fr;
@@ -92,9 +91,9 @@
   display: grid;
   justify-items: center;
   align-items: center;
+  height: 100vh;
   min-height: 668px;
   padding: 10px;
-  min-block-size: 100vh;
 }
 
 /* --- COMPONENTS --- */
@@ -110,8 +109,8 @@
   right: 10px;
   width: 25px;
   height: 25px;
-  border-top: 1px solid var(--decor-color);
-  border-right: 1px solid var(--decor-color);
+  border-top: 1px solid var(--decor-zone-color);
+  border-right: 1px solid var(--decor-zone-color);
 }
 
 .decorated-zone::before {
@@ -121,8 +120,8 @@
   left: 10px;
   width: 25px;
   height: 25px;
-  border-bottom: 1px solid var(--decor-color);
-  border-left: 1px solid var(--decor-color);
+  border-bottom: 1px solid var(--decor-zone-color);
+  border-left: 1px solid var(--decor-zone-color);
 }
 
 .header__rec {
@@ -185,13 +184,14 @@
 .title-decor {
   color: var(--subtitle-color);
   font-weight: 800;
+  font-size: 18px;
   line-height: 23.4px;
   background-color: var(--decor-color);
 }
 
 .header__accent-title-decor {
   color: var(--title-color);
-  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-size: var(--accent-title-size);
   line-height: 82.5%;
   text-transform: lowercase;
   text-shadow: 4px 4px 0 var(--decor-color);
@@ -199,7 +199,7 @@
 
 .footer__accent-title-decor {
   color: var(--title-color);
-  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-size: var(--accent-title-size);
   line-height: 82.5%;
   text-transform: lowercase;
   text-shadow: 2px 2px 0 var(--decor-color);
@@ -211,15 +211,7 @@
   line-height: 23.4px;
 }
 
-.content__card-title {
-  color: var(--subtitle-color);
-  font-size: 18px;
-  line-height: 23.4px;
-  background-color: var(--decor-color);
-}
-
 .content__card-title-regular {
-  margin-bottom: 10px;
   font-weight: 400;
 }
 
@@ -308,10 +300,6 @@
     margin-left: -20px;
   }
 
-  .header__accent-title-decor {
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem) ;
-  }
-
   .header__text {
     grid-column: 2 / -1;
   }
@@ -321,20 +309,16 @@
     padding: 0 20px;
   }
 
-  .section__why,
-  .section__what,
-  .section__how {
+  .content__section {
     grid-template-columns: 1fr 2fr;
   }
 
-  .section__why .content__section-title,
-  .section__what .content__section-title,
-  .section__how .content__section-title {
+  .content__section-title {
     grid-column: 1 / 2;
   }
 
   .section__why .content__wrapper,
-  .section__how .content__wrapper-text {
+  .section__how .content__wrapper {
     grid-column: 2 / -1;
   }
 
@@ -420,10 +404,6 @@
 
   .section__how .content__section-title {
     grid-column: 1 / 2;
-  }
-
-  .section__how .content__wrapper-text {
-    grid-column: 2 / -1;
   }
 
   .footer {
