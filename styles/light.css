@@ -1,5 +1,5 @@
 :root.theme-light {
-  --bg-color: #353430;
+  --bg-color: #fff1f7;
   --text-color: #353430;
   --accent-color: #353430;
   --title-color: #FFC2E6;
@@ -9,12 +9,13 @@
   --button-text-color: #353430;
   --button-hover-color: rgb(3, 52, 48, 0.4);
   --decor-color: #FF8DCB;
+  --decor-zone-color: #353430;
   --bg-image: url(../images/cover-image-light.png);
 }
 
 @media (prefers-color-scheme: light) {
   :root {
-  --bg-color: #353430;
+  --bg-color: #fff1f7;
   --text-color: #353430;
   --accent-color: #353430;
   --title-color: #FFC2E6;
@@ -24,6 +25,7 @@
   --button-text-color: #353430;
   --button-hover-color: rgb(3, 52, 48, 0.4);
   --decor-color: #FF8DCB;
+  --decor-zone-color: #353430;
   --bg-image: url(../images/cover-image-light.png);
   }
 }
